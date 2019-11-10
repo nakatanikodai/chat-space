@@ -26,15 +26,22 @@ Things you may want to cover:
 ## user テーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|
-|mail|integer|
-|password|integer|
+|user_id|integer|null: false, foreign_key: true|
+|mail|integer|null: false, foreign_key: true|
+|password|integer|null: false, foreign_key: true|
+ ## Association
+ - belongs_to :user
+ - belongs_to :user
+ - belongs_to :user
 
 ## message テーブル
 |Column|Type|Options|
 |------|----|-------|
 |body|string|null: false, foreign_key: true|
 |image|string|null: false, foreign_key: true|
+## Association
+- has_many :users
+- has_many :users
 
 
 
