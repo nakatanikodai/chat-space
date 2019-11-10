@@ -34,6 +34,7 @@ Things you may want to cover:
  - belongs_to :user
  - belongs_to :user
  - belongs_to :user
+ - belongs_to :user
 
 ## message テーブル
 |Column|Type|Options|
