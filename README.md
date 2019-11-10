@@ -27,6 +27,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
+|name|string|null: false, foreign_key: true|
 |mail|integer|null: false, foreign_key: true|
 |password|integer|null: false, foreign_key: true|
  ## Association
