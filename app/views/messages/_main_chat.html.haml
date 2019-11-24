@@ -1,0 +1,28 @@
+.main_bar_contents
+  .main_bar_chat
+    .main_bar_chat_contents
+      groupname
+    .main_bar_chat_member
+      menber
+      .main_bar_edit
+        Edit
+  .messages_parts
+    .messages_parts_data
+      .messages_parts_user_name
+        syouya
+      .messages_parts_day_time
+        2019/11/23/19:10:21
+    .messages_parts_messages
+      this is a first
+  
+    .send_contents_parts
+      .message_send_form
+        %input{:placeholder => "type a message",class:"form"}/
+        .image_send
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file",class:"hiden"}
+      .message_send_button
+        %input#submit_button{:name => "submit", :type => "submit", :value => "send",class:"button"}/
+        
+        

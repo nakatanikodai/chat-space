@@ -1,0 +1,125 @@
+
+.wrapper{
+  display: flex;
+}
+
+.main_bar_chat{
+
+  width: 1140px;
+}
+.main_bar_chat_contents{
+  padding-top: 35px;
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.main_bar_chat_member{
+  width: 1140px;
+  font-size: 12px;
+  color: #999999;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_bar_edit{
+  font-size: 20px;
+  color: skyblue;
+  margin-top: 28px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  border: solid thin skyblue;
+  
+}
+
+.messages_parts{
+  font-size: 16px;
+  background-color: #ebd4d4;
+  width: 1140px;
+  height: 850px;
+  position: relative;
+}
+
+.messages_parts_data{
+  display: flex;
+
+  
+}
+
+.messages_parts_user_name{
+  font-weight: bold;
+  color: #434a54;
+  margin-top: 46px;
+  margin-left: 40px;
+}
+
+.messages_parts_day_time{
+  font-size: 12px;
+  color: #999999;
+  margin-top: 50px;
+}
+
+.messages_parts_messages{
+  margin-top: 10px;
+  font-size: 14px;
+  color: #434a54;
+  margin-left: 40px;
+}
+
+.send_contents_parts{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  background-color: #ddd;
+  width: 1140px;
+  height: 80px;
+}
+
+.message_send_form{
+  position: relateive;
+  font-size: 16px;
+  color: #434a54;
+  height: 50px;
+  width: 1000px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.form{
+  height: 40px;
+  width: 90%;
+  position: absolute;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.image_send{
+  position: relative;
+  madia screen{ #file{display:none;}}
+  background-image: url('fas fa-image');
+  margin-top: 15px;
+}
+
+.hiden{
+ display: none;
+ position: relative;
+ text-align: right;
+ 
+}
+
+.fas{
+  float: right;
+  font-size: 25px;
+}
+
+.button{
+  color: white;
+  background-color: skyblue;
+  margin-top: 15px;
+  margin-left: 50px;
+  width: 60px;
+  height: 50px;
+  font-weight: bold;
+  
+}
