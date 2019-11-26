@@ -3,19 +3,19 @@
   display: flex;
 }
 
-.main_bar_chat{
+.main-bar-chat{
   width: 1140px;
-}
-.main_bar_chat--contents{
-  padding-top: 35px;
-  padding-left: 20px;
-  font-size: 20px;
-  color: #333333;
-  margin-bottom: 15px;
-  display: flex;
-}
+  &__contents{
+    padding-top: 35px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 15px;
+    display: flex;
+  }
+}  
 
-.main_bar_chat--member{
+.main-bar-member{
   width: 1140px;
   font-size: 12px;
   padding-left: 20px;
@@ -23,50 +23,47 @@
   border-bottom: 1px solid #eeeeee;
   display: flex;
   justify-content: space-between;
+  &__edit{
+    font-size: 20px;
+    color: skyblue;
+    margin-top: 28px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border: solid thin skyblue;
+    }
 }
 
-.main_bar--edit{
-  font-size: 20px;
-  color: skyblue;
-  margin-top: 28px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  border: solid thin skyblue;
-}
 
-.messages_parts{
+.messages-parts{
   font-size: 16px;
   background-color: #ebd4d4;
   width: 1160px;
   height: 850px;
   position: relative;
+  &__data{
+    display: flex;
+  }
+    &__user-name{
+      font-weight: bold;
+      color: #434a54;
+      margin-top: 46px;
+      margin-left: 40px;
+    }
+    
+    &__day-time{
+      font-size: 12px;
+      color: #999999;
+      margin-top: 50px;
+    }
+  &__messages{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #434a54;
+    margin-left: 40px;
+  }
 }
 
-.messages_parts--data{
-  display: flex;
-}
-
-.messages_parts--user{
-  font-weight: bold;
-  color: #434a54;
-  margin-top: 46px;
-  margin-left: 40px;
-}
-
-.messages_parts--time{
-  font-size: 12px;
-  color: #999999;
-  margin-top: 50px;
-}
-
-.messages_parts--messages{
-  margin-top: 10px;
-  font-size: 14px;
-  color: #434a54;
-  margin-left: 40px;
-}
-
-.send_contents_parts{
+.send-contents-parts{
   position: absolute;
   bottom: 20px;
   display: flex;
@@ -77,7 +74,7 @@
   margin-left: 40px;
 }
 
-.message_send_form{
+.message-send-form{
   position: relateive;
   font-size: 16px;
   color: #434a54;
@@ -87,7 +84,7 @@
   margin-bottom: 30px;
 }
 
-.input_form{
+.input-form{
   height: 40px;
   width: 90%;
   position: absolute;
@@ -96,12 +93,12 @@
   margin-bottom: 10px;
 }
 
-.image_send{
+.image-send{
   position: relative;
   madia screen{ #file{display:none;}}
   background-image: url('fas fa-image');
   margin-top: 15px;
-  margin-right: 45px;
+  margin-right: 50px;
 }
 
 .hiden{
@@ -115,7 +112,7 @@
   margin-top: 30px;
 }
 
-.send_button{
+.send-button{
   color: white;
   background-color: skyblue;
   width: 60px;

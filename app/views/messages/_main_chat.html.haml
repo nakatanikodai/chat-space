@@ -1,28 +1,28 @@
 
-.main_bar_contents
-  .main_bar_chat
-    .main_bar_chat--contents
+.main-bar-contents
+  .main-bar-chat
+    .main-bar-chat__contents
       groupname
-  .main_bar_chat--member
+  .main-bar-member
     menber
-    .main_bar--edit
+    .main-bar-member__edit
       Edit
-  .messages_parts
-    .messages_parts--data
-      .messages_parts--user
+  .messages-parts
+    .messages-parts__data
+      .messages-parts__user-name
         syouya
-      .messages_parts--time
+      .messages-parts__day-time
         2019/11/23/19:10:21
-    .messages_parts--messages
+    .messages-parts__messages
       this is a first
   
-    .send_contents_parts
-      .message_send_form
-        %input{placeholder: "type a message",class:"input_form"}/
-      .image_send
-        %label{class: "input-box__image"}
+    .send-contents-parts
+      .message-send-form
+        %input{placeholder: "type a message",class:"input-form"}/
+      .image-send
+        %label{class: "input-box_image"}
           = icon('fas', 'image') do
             %input{type: "file",class:"hiden"}
-      .image_send_button
+      .image-send-button
         .message_send_button
-          %input#submit_button{name: "submit", type: "submit", value: "send",class:"send_button"}/
+          %input#submit_button{name: "submit", type: "submit", value: "send",class:"send-button"}/
