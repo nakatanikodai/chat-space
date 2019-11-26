@@ -1,28 +1,28 @@
 
 .main_bar_contents
   .main_bar_chat
-    .main_bar_chat_contents
+    .main_bar_chat--contents
       groupname
-  .main_bar_chat_member
+  .main_bar_chat--member
     menber
-    .main_bar_edit
+    .main_bar--edit
       Edit
   .messages_parts
-    .messages_parts_data
-      .messages_parts_user_name
+    .messages_parts--data
+      .messages_parts--user
         syouya
-      .messages_parts_day_time
+      .messages_parts--time
         2019/11/23/19:10:21
-    .messages_parts_messages
+    .messages_parts--messages
       this is a first
   
     .send_contents_parts
       .message_send_form
-        %input{:placeholder => "type a message",class:"input_form"}/
+        %input{placeholder: "type a message",class:"input_form"}/
       .image_send
         %label{class: "input-box__image"}
           = icon('fas', 'image') do
             %input{type: "file",class:"hiden"}
       .image_send_button
         .message_send_button
-          %input#submit_button{:name => "submit", :type => "submit", :value => "send",class:"send_button"}/
+          %input#submit_button{name: "submit", type: "submit", value: "send",class:"send_button"}/
