@@ -1,0 +1,28 @@
+
+.main-bar-contents
+  .main-bar-chat
+    .main-bar-chat__contents
+      groupname
+  .main-bar-member
+    menber
+    .main-bar-member__edit
+      Edit
+  .messages-parts
+    .messages-parts__data
+      .messages-parts__user-name
+        syouya
+      .messages-parts__day-time
+        2019/11/23/19:10:21
+    .messages-parts__messages
+      this is a first
+  
+    .send-contents-parts
+      .message-send-form
+        %input{placeholder: "type a message",class:"input-form"}/
+      .image-send
+        %label{class: "input-box_image"}
+          = icon('fas', 'image') do
+            %input{type: "file",class:"hiden"}
+      .image-send-button
+        .message_send_button
+          %input#submit_button{name: "submit", type: "submit", value: "send",class:"send-button"}/
