@@ -5,14 +5,16 @@
     %ul.side-bar-contents__setting
       .side-bar-contents__setting-icon
         %i
-          = link_to do
+          = link_to new_group_path do
             = icon('fas', 'pen-square', class: 'pen')
         %i
           =link_to edit_user_path(current_user) do
             =icon('fas','cog', class:'setting')
       %li.list
   .side-bar-contents__second
-    .side-bar-contents__group-name
-      test1
-    .side-bar-contents__text
-      まだメッセージはありません。
+    - current_user.groups.each do |group|
+      .side-bar-contents__group-name
+        = link_to group_messages_path(group) do
+          = group.name
+      .side-bar-contents__text
+        まだメッセージはありません。
