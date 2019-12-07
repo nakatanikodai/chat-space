@@ -9,13 +9,7 @@
       .main-bar-member__edit
         =link_to 'Edit', edit_group_path(@group)
   .messages-parts
-    .messages-parts__data
-      .messages-parts__user-name
-        syouya
-      .messages-parts__day-time
-        2019/11/23/19:10:21
-    .messages-parts__messages
-      this is a first
+    = render @messages
   
     .send-contents-parts
       .message-send-form
