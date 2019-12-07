@@ -68,56 +68,88 @@
   bottom: 20px;
   display: flex;
   background-color: #ddd;
-  width: 1090px;
+  //width: 1090px;
   height: 80px;
-  display: flex;
+  //display: flex;
   margin-left: 40px;
-}
+  
+  .message-send-form{
+    position: relative;
+    font-size: 16px;
+    color: #434a54;
+    height: 50px;
+    width: 1090px;
+    margin-top: 15px;
+    //margin-bottom: 30px;
+    //display: flex;
+    
+  }
+    
+    
+    .input-form{
+      height: 50px;
+      width: 90%;
+      position: absolute;
+      //margin-top: 1px;
+      margin-right: 10px;
+      //margin-bottom: 10px;
+    }
+      
+    .image-send{
+      position: absolute;
+      madia screen{ #file{display:none;}}
+      background-image: url('fas fa-image');
+      //margin-top: 15px;
+      margin-right: 50px;
+      margin-left: 950px;
+      margin-top: 5px;
+      color: skyblue;
+      width: 20px;
+      height: 15px;
+      
+    }
 
-.message-send-form{
-  position: relateive;
-  font-size: 16px;
-  color: #434a54;
-  height: 50px;
-  width: 1000px;
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
+      .form__mask__image{
+        font-size: 30px;
+        color: skyblue;
+        //margin-top: 60px;
+        position: absolute;
+        //margin-top: px;
+        margin-bottom: 10px;
+      }
 
-.input-form{
-  height: 40px;
-  width: 90%;
-  position: absolute;
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
+      .hiden{
+        display: none;
+        //position: relative;
+        text-align: right;
+      }
+    .send-button{
+      color: white;
+      background-color: skyblue;
+      // width: 60px;
+      //height: 50px;
+      font-weight: bold;
+      //margin-top: px;
+      //margin-left: 60px;
+      // margin-bottom: 2px;
+      // position: absolute;
+      // z-index: 1;
+      //float: right;
+      position: absolute;
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 1px;
+      margin-left: 1015px;
+      font-size: 20px;
+      position: absolute;
+    }
+}  
 
-.image-send{
-  position: relative;
-  madia screen{ #file{display:none;}}
-  background-image: url('fas fa-image');
-  margin-top: 15px;
-  margin-right: 50px;
-}
 
-.hiden{
- display: none;
- position: relative;
- text-align: right;
-}
 
-.fas{
-  font-size: 25px;
-  margin-top: 30px;
-}
 
-.send-button{
-  color: white;
-  background-color: skyblue;
-  width: 60px;
-  height: 50px;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-left: 5px;
-}
+
+
+
