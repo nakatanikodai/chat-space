@@ -1,8 +1,5 @@
 class UsersController < ApplicationController
 
-  before_action :set_group
-  
-
 
   def update
     if current_user.update(user_params)
