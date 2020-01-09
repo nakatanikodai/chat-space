@@ -1,38 +1,28 @@
 
-.main-bar-contents
-  .main-bar-chat
-    .main-bar-chat__contents
-      =@group.name
-    .main-bar-member
-      - @group.users.each do |user|
-        =user.name
-      .main-bar-member__edit
-        =link_to 'Edit', edit_group_path(@group)
-  .messages-parts
-    = render @messages
-  
-    .send-contents-parts
-      .message-send-form
-        = form_for [@group, @message] do |f|
-          = f.text_field :content, class: 'input-form', placeholder: 'type a message'
-          .image-send
-            = f.label :image, class: 'form__mask__image' do
-              = icon('fas', 'image', class: 'icon')
-              = f.file_field :image, class: 'hiden'
-          = f.submit 'Send', class: 'send-button'
-          
-      
-      
-      
-      
-      
-      
-      //.message-send-form
-      //  %input{placeholder: "type a message",class:"input-form"}/
-      //.image-send
-      //  %label{class: "input-box_image"}
-      //    = icon('fas', 'image') do
-      //      %input{type: "file",class:"hiden"}
-      //.image-send-button
-      //  .message_send_button
-      //    %input#submit_button{name: "submit", type: "submit", value: "send",class:"send-button"}/
+.main-chat
+  .main-header
+    .main-header__left
+      .main-header__left__group-name
+        =@group.name
+      .main-header__left__group-member
+        %ul.main-header__group-member__list
+          Member：
+        .main-header__group-member__list__member
+        - @group.users.each do |user|
+          = user.name
+    .main-header__edit
+      =link_to 'Edit', edit_group_path(@group)
+  .messages
+    =render @messages
+  .send-form
+    .new-message
+      .input-box
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'input-form', placeholder: 'type a message'
+        
+        .input-box__image
+          = f.label :image, class: 'form__mask__image' do
+            = icon('fas', 'image', class: 'icon')
+            = f.file_field :image, class: 'hiden'
+        = f.submit 'Send', class: 'send-button'
+

@@ -1,38 +1,49 @@
-
-.wrapper{
-  display: flex;
+.main-chat{
+  width: calc(100vw-30);
+  height: 100vh;
 }
 
-.main-bar-chat{
-  width: 1140px;
-  &__contents{
-    padding-top: 35px;
-    padding-left: 20px;
-    font-size: 20px;
-    color: #333333;
-    margin-bottom: 15px;
-    display: flex;
+.main-header{
+  height: 100px;
+  display: flex;
+  
+  &__left{
+    padding-top: 15px;
   }
-}  
+  
+  &__left__group-name{
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+  }
 
-.main-bar-member{
-  width: 1140px;
-  font-size: 12px;
-  padding-left: 20px;
-  color: #999999;
-  border-bottom: 1px solid #eeeeee;
-  display: flex;
-  justify-content: space-between;
-  &__edit{
-    font-size: 20px;
-    color: skyblue;
-    margin-top: 28px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    border: solid thin skyblue;
-    }
+  &__left__group-member{
+    display: flex;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
 }
 
+.main-header__edit{
+  height: 30px;
+  width: 40px;
+  padding: 8px 10px 5px 10px;
+  margin-top: 30px;
+  border: solid 1px #38aef0;
+  position: absolute;
+  right: 40px;
+  color: skyblue;
+}
+
+
+.messages{
+  height: calc(100vh - 181px);
+  padding: 46px 40px;
+  background-color: #d4c9c9;
+  overflow: scroll;
+}
 
 .messages-parts{
   font-size: 16px;
@@ -40,6 +51,7 @@
   width: 1160px;
   height: 850px;
   position: relative;
+  overflow: scroll;
   &__data{
     display: flex;
   }
@@ -52,8 +64,9 @@
     
     &__day-time{
       font-size: 12px;
-      color: #999999;
+      color: #746d6d;
       margin-top: 50px;
+      padding-left: 10px;
     }
   &__messages{
     margin-top: 10px;
@@ -63,93 +76,76 @@
   }
 }
 
-.send-contents-parts{
-  position: absolute;
-  bottom: 20px;
-  display: flex;
-  background-color: #ddd;
-  //width: 1090px;
-  height: 80px;
-  //display: flex;
-  margin-left: 40px;
-  
-  .message-send-form{
+.send-form{
     position: relative;
     font-size: 16px;
     color: #434a54;
-    height: 50px;
-    width: 1090px;
-    margin-top: 15px;
-    //margin-bottom: 30px;
-    //display: flex;
+    height: 90px;
+    margin-top: 0px;
+    margin-left: 300px;
+    background-color: #ddd;
     
   }
     
+.new_message{
+  display: flex;
+}
     
-    .input-form{
-      height: 50px;
-      width: 90%;
-      position: absolute;
-      //margin-top: 1px;
-      margin-right: 10px;
-      //margin-bottom: 10px;
-    }
+.input-form{
+  height: 50px;
+  width: calc( 100vw - 500px);
+  position: relative;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
       
-    .image-send{
-      position: absolute;
-      madia screen{ #file{display:none;}}
-      background-image: url('fas fa-image');
-      //margin-top: 15px;
-      margin-right: 50px;
-      margin-left: 950px;
-      margin-top: 5px;
-      color: skyblue;
-      width: 20px;
-      height: 15px;
-      
-    }
+.input-box__image{
+  position: absolute;
+  right: 130px;
+  top: 5px;
+  madia screen{ #file{display:none;}}
+  background-image: url('fas fa-image');
+  margin-right: 50px;
+  margin-left: 1250px;
+  margin-top: 22px;
+  color: skyblue;
+  width: 20px;
+  height: 15px;
+  
+}
 
-      .form__mask__image{
-        font-size: 30px;
-        color: skyblue;
-        //margin-top: 60px;
-        position: absolute;
-        //margin-top: px;
-        margin-bottom: 10px;
-      }
+.form__mask__image{
+  font-size: 30px;
+  color: skyblue;
+  position: relative;
+  margin-bottom: 10px;
+}
 
-      .hiden{
-        display: none;
-        //position: relative;
-        text-align: right;
-      }
-    .send-button{
-      color: white;
-      background-color: skyblue;
-      // width: 60px;
-      //height: 50px;
-      font-weight: bold;
-      //margin-top: px;
-      //margin-left: 60px;
-      // margin-bottom: 2px;
-      // position: absolute;
-      // z-index: 1;
-      //float: right;
-      position: absolute;
-      padding-right: 10px;
-      padding-left: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin-bottom: 1px;
-      margin-left: 1015px;
-      font-size: 20px;
-      position: absolute;
-    }
-}  
+.hiden{
+  display: none;
+  position: relative;
+  text-align: right;
+}
 
 
+.send-button{
+  color: white;
+  background-color: skyblue;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 1px;
+  margin-left: 1400px;
+  margin-top: 20px;
+  font-size: 20px;
+  position: absolute;
+  right: 40px;
+  
+}
 
-
-
-
-
+.fa-image{
+  display: inline-block;
+}
