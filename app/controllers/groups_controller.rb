@@ -42,13 +42,4 @@ class GroupsController < ApplicationController
   def set_group
     @group = Group.find(params[:id])
   end
-
-#  def show_group_members
-#    @user = User.where(name: "chat_space")
-#  end
-
-  #def show
-  #  @groupname = Article.find(params[:id])
-  #end
-
 end
