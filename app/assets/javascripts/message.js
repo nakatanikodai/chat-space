@@ -56,58 +56,6 @@ var buildHTML = function(message){
   };
   return html;
 };
-//var buildHTML = function(message){
-//  if (message.content && message.image){
-//    var html = `<div class="message" data-message-id=` + message.id + `>` +
-//      `<div class="messages-parts__data">` +
-//        `<div class="messages-parts__user-name">` +
-//          message.user_name +
-//        `</div>` +
-//        `<div class="messages-parts__day-time">` +
-//          message.created_at +
-//        `</div>` +
-//      `</div>` +
-//      `<div class="messages-parts__messages">` +
-//        `<p class="lower-message__content">` +
-//          message.content +
-//        `</p>` +
-//        `<img src="` + message.image + `" class="lower-message__image" >` +
-//      `</div>` +
-//    `</div>`
-//  } else if (message.content) {
-//    var html = `<div class="message" data-message-id=` + message.id + `>` +
-//      `<div class="messages-parts__data">` +
-//        `<div class="messages-parts__user-name">` +
-//          message.user_name +
-//        `</div>` +
-//        `<div class="messages-parts__day-time">` +
-//          message.created_at +
-//        `</div>` +
-//      `</div>` +
-//      `<div class="messages-parts__messages">` +
-//        `<p class="lower-message__content">` +
-//          message.content +
-//        `</p>` +
-//      `</div>` +
-//    `</div>`
-//  } else if (message.image) {
-//    var html = `<div class="message" data-message-id=` + message.id + `>` +
-//      `<div class="messages-parts__data">` +
-//        `<div class="messages-parts__user-name">` +
-//          message.user_name +
-//        `</div>` +
-//        `<div class="messages-parts__day-time">` +
-//          message.created_at +
-//        `</div>` +
-//      `</div>` +
-//      `<div class="messages-parts__messages">` +
-//        `<img src="` + message.image + `" class="lower-message__image" >` +
-//      `</div>` +
-//    `</div>`
-//  };
-//  return html;
-//};
-    
 
   $('#new_message').on('submit', function(e){
     e.preventDefault();
