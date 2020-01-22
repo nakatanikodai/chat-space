@@ -19,7 +19,7 @@ var buildHTML = function(message){
           ${message.content} 
         </p> 
         <img src="  ${message.image} " class="lower-message__image" > 
-        console.log(ok)
+        
       </div>
     </div>`
   } 

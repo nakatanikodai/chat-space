@@ -3,6 +3,10 @@
   height: calc( 100vh - 50px);
   color: white;
   float: left;
+  a, a:hover, a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .side-header{
@@ -20,13 +24,15 @@
       font-weight: bold;
       margin-top: 30px;
       color: white;
+      margin-top:10px;
     }
 
     &__box__user-name{
       display: block;
-      font-size: 30px;
+      font-size: 20px;
       margin-bottom: 30px;
       color: white;
+      margin-top: 12px;
     }
 
     &__box__menu{
@@ -87,11 +93,13 @@
   padding-top: 10px;
   box-sizing: border-box;
   display: block;
+  text-decoration: none;
   
   &__group-name{
     font-size: 15px;
     margin-bottom: 5px;
     font-weight: bold;
+    color: white;
   }
 
   &__latest-message{
@@ -101,9 +109,12 @@
 }
 
 
-a:-webkit-any-link{
-  color: rgb(114, 180, 224);
-}
+//a:-webkit-any-link{
+//  color: white;
+//  display: inline-block;
+//  text-decoration: noen;
+//}
+
 
 
 
