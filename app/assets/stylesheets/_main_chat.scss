@@ -6,6 +6,8 @@
 .main-header{
   height: 100px;
   display: flex;
+  border-bottom: solid 1px #eee;
+  
   
   &__left{
     padding-top: 15px;
@@ -36,7 +38,7 @@
   right: 40px;
   color: skyblue;
   display: block;
-  
+
   a, a:hover, a:visited {
     color: #38aef0;
     text-decoration: none;
@@ -47,13 +49,13 @@
 .messages{
   height: calc(100vh - 181px);
   padding: 46px 40px;
-  background-color: #d4c9c9;
+  background-color: white;
   overflow: scroll;
 }
 
 .messages-parts{
   font-size: 16px;
-  background-color: #ebd4d4;
+  background-color: white;
   width: 1160px;
   height: 850px;
   position: relative;
@@ -137,8 +139,8 @@
 
 .send-button{
   color: white;
-  background-color: skyblue;
-  font-weight: bold;
+  background-color: #38aef0;
+  
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
