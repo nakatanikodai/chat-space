@@ -1,17 +1,18 @@
 .chat-side {
   width: 300px;
-  height: calc( 100vh - 50px);
+  height: 100vh;
   color: white;
   float: left;
   a, a:hover, a:visited {
     color: #fff;
     text-decoration: none;
+   
   }
 }
 
 .side-header{
     background-color: #253141;
-    height: 100px;
+    height: 110px;
     display: flex;
     align-items: center;
     padding: 0 20px;
@@ -22,9 +23,9 @@
       justify-content: space-between;
       width: 100%;
       font-weight: bold;
-      margin-top: 30px;
+      //margin-top: 30px;
       color: white;
-      margin-top:10px;
+      margin-top:1px;
     }
 
     &__box__user-name{
@@ -38,11 +39,11 @@
     &__box__menu{
       list-style-type: none;
       display: flex;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      padding-inline-start: 40px;
+      //margin-block-start: 1em;
+      //margin-block-end: 1em;
+      //margin-inline-start: 0px;
+      //margin-inline-end: 0px;
+      //padding-inline-start: 40px;
       
     }
 
@@ -69,6 +70,7 @@
   color: white;
   font-size: 20px;
   margin-right: 10px;
+  margin-top: 15px
 }
 
 .fa-cog{
@@ -80,16 +82,17 @@
   color: white;
   font-size: 20px;
   margin-right: 10px;
+  margin-top: 15px;
 }
 
 .groups{
-  height: 100vh;
+  height: 960px;
   background-color: #2f3e51;
   padding-left: 20px;  
 }
 
 .group{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-top: 10px;
   box-sizing: border-box;
   display: block;
